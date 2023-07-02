@@ -1,16 +1,27 @@
 /* Задание 1
-let a = 10;
-alert(a);
-alert(a + 10);
+let num = 1;
+num +=5; // num = 6
+num -=3; // num = 3
+num *=7; // num = 21
+num /=3; // num = 7
+num ++; // num = 8
+num --; // num = 7
+alert(num); // выводит 7
+
+let a;
+a = 10;
+alert(a); // выводит 10
+a = 20;
+alert(a); // выводит 20
 */
 
 /* Задание 2
-let year = 2007;
+const year = 2007;
 alert(year);
 */
 
 /* Задание 3
-let Name = 'Брендан Эйх';
+const Name = 'Брендан Эйх';
 alert(Name);
 */
 
@@ -37,12 +48,12 @@ alert(a % b);
 
 /*
 let num = 1;
-num += num 5;
-num -= num  3;
-num *= num  7;
-num /= num  3;
-num += num  1;
-num -= num  1;
+num += 5;
+num -= 3;
+num *= 7;
+num /= 3;
+num ++ ;
+num -- ;
 alert(num);
 */
 
@@ -60,11 +71,11 @@ let user = {
 */
 
 /* Задание 9.1
-let user.cityofresidence = 'Moscow';
+user.cityofresidence = 'Moscow';
 */
 
 /* Задание 9.2
-let age = 18;
+user.age = 18;
 */
 
 /* Задание 9.3
@@ -73,11 +84,11 @@ delete User.cityofresidence;
 
 /* Задание 9.4
 let info = promt('Какую информацию хотите узнать о пользователе?');
-console.log(user{info});
+console.log(user[info]);
 alert(user);
 */
 
-/*
+/* Задание 10
 let name = prompt("Как вас зовут?");
 alert(`Привет, ${name}`);
 */
