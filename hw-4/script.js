@@ -46,31 +46,11 @@ console.log(num);
 */
 
 /*
-let dayNumber = +prompt('Введите число первой пятницы месяца');
-while (dayNumber <= 31) {
-    if (1 <= dayNumber &&  dayNumber <= 3) {
-        console.log(`Сегодня пятница, ${dayNumber}-е число. Необходимо подготовить отчет.`);
-        dayNumber = dayNumber + 7;
-        console.log(`Сегодня пятница, ${dayNumber}-е число. Необходимо подготовить отчет.`);
-        dayNumber = dayNumber + 7;
-        console.log(`Сегодня пятница, ${dayNumber}-е число. Необходимо подготовить отчет.`);
-        dayNumber = dayNumber + 7;
-        console.log(`Сегодня пятница, ${dayNumber}-е число. Необходимо подготовить отчет.`);
-        dayNumber = dayNumber + 7;
-        console.log(`Сегодня пятница, ${dayNumber}-е число. Необходимо подготовить отчет.`);
+for (let dayNumber = 1; dayNumber <- 31; daynumber+=7) {
+    if (dayNumber % 5 ==0) {
+        console.log('Не пятница, отдыхайте.');
+        continue;
     }
-    else if (4 <= dayNumber && dayNumber <= 7) {
-        console.log(`Сегодня пятница, ${dayNumber}-е число. Необходимо подготовить отчет.`);
-        dayNumber = dayNumber + 7;
-        console.log(`Сегодня пятница, ${dayNumber}-е число. Необходимо подготовить отчет.`);
-        dayNumber = dayNumber + 7;
-        console.log(`Сегодня пятница, ${dayNumber}-е число. Необходимо подготовить отчет.`);
-        dayNumber = dayNumber + 7;
-        console.log(`Сегодня пятница, ${dayNumber}-е число. Необходимо подготовить отчет.`);
-    }
-    else {
-        console.log(`На сегодня нет задач.`);
-    }
-    break;
+    console.log(`Сегодня пятница, ${dayNumber} -e число. Необходимо подготовить отчёт.`)
 }
 */
