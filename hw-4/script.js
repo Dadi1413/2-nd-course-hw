@@ -45,7 +45,7 @@ console.log(n);
 console.log(num);
 */
 
-/*
+/* Задание 6
 for (let dayNumber = 1; dayNumber <- 31; daynumber+=7) {
     if (dayNumber % 5 ==0) {
         console.log('Не пятница, отдыхайте.');
