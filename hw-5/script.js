@@ -75,7 +75,7 @@ function multiplyNumbers(num1, num2) {
       return 'Переданный параметр не является числом';
     } else {
       let cube = Math.pow(Number(number), 3);
-      return ${number} в кубе равняется ${cube};
+      return '${number} в кубе равняется ${cube}';
     }
   }
 */
