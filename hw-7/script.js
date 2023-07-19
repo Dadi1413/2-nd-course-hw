@@ -5,20 +5,13 @@ alert(answerUser);
 */
 
 /* Задание 2
-function searchStart(str, search) {
+function searchStart(words, prefix) {
+return words.filter(word => word.toLowerCase().startsWith(prefix.toLowerCase()));
+}
 
-    str.forEach((product) => {
-        if (product.toLowerCase().startsWith(search.toLowerCase())) {
-            console.log(product);
-        }
-    });
-    return str;
-};
-
-
-searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'); // ['кошка', 'комар']
-searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'); // ['груша']
-searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'); // []
+console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко')); 
+console.log(searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру')); 
+console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино')); 
 /*
 
 /* Задание 3
@@ -48,20 +41,27 @@ console.log(getRndInteger(1, 10));
 */
 
 /* Задание 6
-function getRandomArrNumbers(numb) {
-    let array = [];
-    let halfArray = Math.floor(numb / 2);
-    for (let i = 0; i < halfArray; i++) {
-        array.push(Math.ceil(Math.random(numb)));
+function getRandomArrNumbers(number) {
+    let length = Math.floor(number / 2); 
+    let arr = [];
+  
+    for (let i = 0; i < length; i++) {
+      let randomNum = Math.floor(Math.random() * (number + 1)); 
+      arr.push(randomNum); 
     }
-    return array
+  
+    return arr;
 }
+  
+console.log(getRandomArrNumbers(7));
+console.log(getRandomArrNumbers(12));
 */
 
 /* Задание 7
 function getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min;
+    return Math.floor(Math.random() * (max - min) + min);
 }
+console.log(getRandomArbitrary(2, 5));
 */
 
 /* Задание 8
@@ -70,8 +70,11 @@ console.log(nowDate);
 */
 
 /* Задание 9
-let currentDate = new Date ();
-setDate(getDate(73))
+let currentDate = new Date();
+let futureDate = new Date(); 
+futureDate.setDate(currentDate.getDate() + 73);
+
+console.log(futureDate.toDateString()); 
 */
 
 
