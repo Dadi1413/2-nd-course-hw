@@ -8,9 +8,11 @@ const nameTextAreaElement = document.querySelector('.add-form-text');
 const myDate = new Date().toLocaleDateString().slice(0, 6) + new Date().toLocaleDateString().slice(-2);
 const nowDate = myDate + ' ' + new Date().toLocaleTimeString().slice(0, -3);
 
+
 const containerPreloaderPost = document.getElementById('container-preloader-post');
 const addFormElement = document.querySelector('.add-form');
 const likeBtnElement = document.querySelectorAll('.like-button');
+
 
 // COMMENTS нужно получать из хранилища данных
 let comments = [];
@@ -70,7 +72,7 @@ export const initEventListeners = () => {
 	}
 
 
-	// коллекция коменнтариев
+	// создаю коллекцию коменнтариев
 	const answerElements = document.querySelectorAll('.comment');
 
 	for (const answer of answerElements) {
@@ -82,7 +84,6 @@ export const initEventListeners = () => {
 		});
 	}
 };
-
 
 
 export function functionEdit() {
