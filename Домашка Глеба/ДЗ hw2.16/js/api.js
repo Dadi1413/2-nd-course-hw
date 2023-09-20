@@ -10,6 +10,7 @@ export const setToken = (newToken) => {
 	token = newToken;
 }
 
+
 export function getComments() {
 
 	return fetch(commentsUrl, {
