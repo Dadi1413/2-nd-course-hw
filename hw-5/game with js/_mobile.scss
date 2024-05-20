@@ -1,4 +1,4 @@
-@media (max-width: 376px) {
+@media (max-width: 768px) {
     .center {
         padding-left: 16px;
         padding-right: 16px;
@@ -51,10 +51,12 @@
     }
 
     .game {
+        justify-content: center;
         flex-wrap: wrap;
     }
 
     .content {
+        justify-content: center;
         padding-top: 51px;
         padding-bottom: 85px;
         gap: 64px;
@@ -87,6 +89,7 @@
     }
 
     .contentv2 {
+        justify-content: center;
         padding-top: 51px;
         padding-bottom: 85px;
         gap: 64px;
