@@ -103,3 +103,6 @@ function getNegativeNumbers(arr) {
   let negativeNumbers = getNegativeNumbers(numbers);
   console.log(negativeNumbers); // [-2, -4]
   */
+
+  //DDD// 
+  
